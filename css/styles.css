@@ -65,32 +65,25 @@ a.list-group-item.active,[class*='-info'] {
 }
   
 #section2 {
-	background-color: #e5e5ef;
+    padding-top: 20px;
+	background-color: #FFF;
     color:#000000;
 }
   
 #section3 {
+    padding-top: 20px;
 	background-color: #168ccc;
     color:#FFF;
 }
 
 #section4 {
-	background-color: #e5e5ef;
+    padding-top: 20px;
+	background-color: #FFF;
     color:#444;
 }
 
-#section5,#section7,#section7 a {
-    color:#f5f5f5;
-}
-
-#section6 {
-	background-color: #168ccc;
-    color:#ddd;
-}
-
 footer {
-	background-color:#494949;
-    color:#ddd;
+    color:#FFF;
     min-height:100px;
     padding-top:20px;
     padding-bottom:40px;
@@ -125,14 +118,93 @@ h4 {
     text-align: left;
 }
 
-a.post {
-    color: orange;
+.poste > a {
+ color: #F2992E;
+ text-decoration: none;
+ }
+.poste > a:visited {
+ color: #F2992E;
+ text-decoration: none;
+ }
+.poste > a:active {
+ color: #F2992E;
+ text-decoration: none;
+}
+.poste > a:hover {
+ color: #FF00A5;
+ text-decoration: none;
 }
 
 .date {
     float: right;    
 }
 
-.simplon>img {
+.simplon > img {
     width: 200px;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+.wrapper{
+    background-attachment: scroll;
+    width: 325px;
+    height: 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon{
+  display: inline-block;
+  position: relative;
+  color: #bdbdbd;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 1.47em;
+  line-height: 2em;
+  background-color: #fff;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 3px 0px #bdbdbd, 0px 3px 10px #bababa;
+  -webkit-transition:background-color 250ms ease 0s;
+  transition:background-color 250ms ease 0s;
+}
+
+.zocial-facebook{margin-left: -8px}
+
+.icon.facebook:hover{background-color: #4986c7;}
+.twitter:hover{background-color: #4cb6e8;}
+.linkedin:hover{background-color: #29a0cc;}
+.youtube:hover{background-color: #a32929;}
+.flickr:hover{background-color: #c257ad;}
+.email:hover{background-color: #d5b120;}
+
+
+#social > a {
+ text-decoration: none;
+ }
+#social > a:visited {
+ text-decoration: none;
+ }
+#social > a:active {
+ text-decoration: none;
+}
+#social > a:hover {
+ text-decoration: none;
+}
+
+.icon:hover{
+  color: #fff;
+  box-shadow: 0px 3px 0px #686868, 0px 3px 10px #7e7e7e;
+}
+
+.icon:active{
+  box-shadow: inset 0px 1px 4px #3d3d3d, 0px 0px 0px #bdbdbd;
+  top: 3px;
 }
