@@ -208,3 +208,21 @@ h4 {
   box-shadow: inset 0px 1px 4px #3d3d3d, 0px 0px 0px #bdbdbd;
   top: 3px;
 }
+
+.scrollToTop{
+    width:100px; 
+    height:100px; 
+    text-align:center; 
+    background: whiteSmoke;
+    font-weight: bold;
+    color: #444;
+    text-decoration: none;
+    position:fixed;
+    top:75px;
+    right:40px;
+    display:none;
+    background: url('../img/arrow7.png') no-repeat 20px 20px;
+}
+.scrollToTop:hover{
+    text-decoration:none;
+}
