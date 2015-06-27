@@ -225,3 +225,7 @@ h4 {
 .scrollToTop:hover{
     text-decoration:none;
 }
+
+.button_pdf {
+    margin-top: 20px;
+}
