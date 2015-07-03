@@ -217,7 +217,7 @@ h4 {
     color: #444;
     text-decoration: none;
     position:fixed;
-    bottom:70px;
+    bottom:10px;
     right:5px;
     display:none;
     background: url('../img/arrow7.png') no-repeat 20px 20px;
