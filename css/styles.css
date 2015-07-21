@@ -105,7 +105,7 @@ a.list-group-item.active,[class*='-info'] {
  color: #FF00A5;
  text-decoration: none;
 }
-.partner > a > img{
+.partner > center > a > img{
   margin-top: 20px;
 }
 
