@@ -82,6 +82,33 @@ a.list-group-item.active,[class*='-info'] {
     color:#444;
 }
 
+#section5 {
+    padding-top: 20px;
+  background-color: #168ccc;
+    color:#FFF;
+}
+
+.partner > a {
+  margin-bottom: 50px;
+ color: #F2992E;
+ text-decoration: none;
+ }
+.partner > a:visited {
+ color: #F2992E;
+ text-decoration: none;
+ }
+.partner > a:active {
+ color: #F2992E;
+ text-decoration: none;
+}
+.partner > a:hover {
+ color: #FF00A5;
+ text-decoration: none;
+}
+.partner > a > img{
+  margin-top: 20px;
+}
+
 footer {
     color:#FFF;
     min-height:100px;
