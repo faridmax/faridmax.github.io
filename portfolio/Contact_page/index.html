@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <script src="js/angular.min_1.4.3.js"></script>
+    <script src="js/angular-messages-1.4.2.js"></script>
+    <script src="js/validation.js"></script>
+</head>
+<body  ng-app="ngMessagesExample">
+
+<div class="container">
+
+<div class="page-header">
+    <h1>Contact Form validation with AngularJS</h1>
+</div>
+
+<!-- Contact Form - START -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post" name="myForm">
+                    <fieldset>
+                        <legend class="text-center header">Contact us</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="firstName" type="text" placeholder="First Name" class="form-control" ng-model="firstName" ng-minlength="3" ng-maxlength="20" required >
+                            </div>
+                            <div ng-messages="myForm.firstName.$error" style="color:maroon" role="alert">
+                                <div ng-message="required">You did not enter a field</div>
+                                <div ng-message="minlength">Your firstname is too short</div>
+                                <div ng-message="maxlength">Your firstname is too long</div>
+                                <div ng-message="" style="color:green">It's valid</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="lastName" type="text" placeholder="Last Name" class="form-control" ng-model="name" ng-minlength="3" ng-maxlength="20" required >
+                            </div>
+                            <div ng-messages="myForm.lastName.$error" style="color:maroon" role="alert">
+                                <div ng-message="required">You did not enter a field</div>
+                                <div ng-message="minlength">Your lastname is too short</div>
+                                <div ng-message="maxlength">Your lastname is too long</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8" ng-controller="EmailController">
+                                <input id="email" name="email" type="email" placeholder="Email Address" class="form-control" ng-model="email.text" required >
+                            </div>
+                            <div role="alert">
+                              <span class="error" style="color:maroon" ng-show="myForm.email.$error.required">
+                                Required!</span>
+                              <span class="error" style="color:maroon" ng-show="myForm.email.$error.email">
+                                Not valid email!</span>
+                              <span class="valid" style="color:green" ng-show="myForm.email.$valid">it's valid</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control" ng-model="phone" ng-minlength="8" ng-maxlength="15" required >
+                            </div>
+                            <div ng-messages="myForm.phone.$error" style="color:maroon" role="alert">
+                                <div ng-message="required">You did not enter a field</div>
+                                <div ng-message="minlength">Your phone number is too short</div>
+                                <div ng-message="maxlength">Your phone number is too long</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-1 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7" ng-model="message" ng-minlength="10" ng-maxlength="400" required ></textarea>
+                            </div>
+                            <div ng-messages="myForm.message.$error" style="color:maroon" role="alert">
+                                <div ng-message="required">You did not enter a field</div>
+                                <div ng-message="minlength">Your message is too short</div>
+                                <div ng-message="maxlength">Your message is too long</div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form - END -->
+
+</div>
+
+</body>
+</html>

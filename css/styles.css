@@ -88,6 +88,37 @@ a.list-group-item.active,[class*='-info'] {
     color:#FFF;
 }
 
+#section6 {
+    padding-top: 20px;
+  background: linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+    color:#FFF;
+}
+
+.portfolio > a {
+  margin-bottom: 50px;
+ color: #F2992E;
+ text-decoration: none;
+ }
+.portfolio > a:visited {
+ color: #F2992E;
+ text-decoration: none;
+ }
+.portfolio > a:active {
+ color: #F2992E;
+ text-decoration: none;
+}
+.portfolio > a:hover {
+ color: #FF00A5;
+ text-decoration: none;
+}
+.portfolio > center > a > img{
+  margin-top: 20px;
+}
+
+.partner > h4 {
+  background: linear-gradient(-45deg, #66cdcc 0%, #336799 100%);
+}
+
 .partner > a {
   margin-bottom: 50px;
  color: #F2992E;
@@ -264,4 +295,9 @@ h4 {
 
 .translator {
   padding-top: 12px;
+}
+
+#img-portfolio {
+    min-width: 320px;
+    min-height: 214px;
 }
